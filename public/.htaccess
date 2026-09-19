@@ -1,0 +1,32 @@
+RewriteEngine On
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteCond %{HTTPS} !on
+RewriteRule ^(.*)$ https://lsdenttek.com.tr/$1 [R=301,L]
+RewriteCond %{HTTP_HOST} ^www\.lsdenttek\.com\.tr$ [NC]
+RewriteRule ^(.*)$ https://lsdenttek.com.tr/$1 [R=301,L]
+DirectoryIndex index.html
+DirectorySlash Off
+RewriteRule ^(en)$ /$1/ [R=301,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.*)$ $1.html [L]
+ErrorDocument 404 /404.html
+<IfModule mod_headers.c>
+<FilesMatch "\.html$">
+Header set Cache-Control "no-cache, must-revalidate"
+</FilesMatch>
+<FilesMatch "\.(jpe?g|png|webp|svg)$">
+Header set Access-Control-Allow-Origin "*"
+</FilesMatch>
+</IfModule>
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType image/jpeg "access plus 30 days"
+ExpiresByType image/png "access plus 30 days"
+ExpiresByType image/svg+xml "access plus 30 days"
+ExpiresByType image/webp "access plus 30 days"
+ExpiresByType font/woff2 "access plus 1 year"
+ExpiresByType text/css "access plus 7 days"
+ExpiresByType application/javascript "access plus 7 days"
+</IfModule>

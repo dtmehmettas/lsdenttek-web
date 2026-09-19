@@ -1,0 +1,5 @@
+# cPanel Git Version Control dağıtımı: repo cPanel'e klonlanınca "Deploy HEAD Commit" bu adımları çalıştırır.
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/u2836410/lsdenttek.com.tr/
+    - /bin/cp -R public/. $DEPLOYPATH
