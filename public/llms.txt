@@ -1,6 +1,6 @@
 # LS DentTek — Dt. Mehmet Taş & Dt. Aycan Işık Taş
 
-> LS DentTek: Uluslararası Sağlık Turizmi Yetki Belgeli Özel DentTEK'te hizmet veren Dt. Mehmet Taş ve Dt. Aycan Işık Taş ekibi. İmplant, All-on-4, zirkonyum ve gülüş tasarımı hakkında bilgilendirme; Esenyurt / İstanbul. İçerik Türkçe ve İngilizce (hreflang ile bağlı); Sağlık Hizmetlerinde Tanıtım ve Bilgilendirme Yönetmeliği'ne uygun, tanıtım değil bilgilendirme amaçlıdır. Tedaviler Özel DentTEK Ağız ve Diş Sağlığı Polikliniği bünyesinde (Uluslararası Sağlık Turizmi Yetki Belgeli Sağlık Tesisi) yürütülür; seyahat ve lojistik ortağı Lightstone Group Travel Agency (TÜRSAB 15898).
+> LS DentTek: Uluslararası Sağlık Turizmi Yetki Belgeli Özel DentTEK'te hizmet veren Dt. Mehmet Taş ve Dt. Aycan Işık Taş ekibi. İmplant, All-on-4, zirkonyum ve gülüş tasarımı hakkında bilgilendirme; Esenyurt / İstanbul. İçerik Türkçe; Sağlık Hizmetlerinde Tanıtım ve Bilgilendirme Yönetmeliği'ne uygun, tanıtım değil bilgilendirme amaçlıdır. Tedaviler Özel DentTEK Ağız ve Diş Sağlığı Polikliniği bünyesinde (Uluslararası Sağlık Turizmi Yetki Belgeli Sağlık Tesisi) yürütülür; seyahat ve lojistik ortağı Lightstone Group Travel Agency (TÜRSAB 15898).
 
 İletişim: +90 543 558 85 19 (WhatsApp) · info@lsdenttek.com.tr · Cumhuriyet Mah. Nazım Hikmet Blv. No:89/2, Altıntaş Okutan İş Merkezi giriş katı, 34515 Esenyurt / İstanbul · Pzt – Cum 09:00 – 22:00 · Cmt 09:00 – 20:00
 
@@ -14,6 +14,3 @@
 - [Sık sorulan sorular](https://lsdenttek.com.tr/sss)
 - [Lightstone Group](https://lsdenttek.com.tr/lightstone): seyahat ortağı, geçiş bilgisi
 - [İletişim](https://lsdenttek.com.tr/iletisim)
-
-## English
-- [Home](https://lsdenttek.com.tr/en/) · [Doctors](https://lsdenttek.com.tr/en/doctors) · [Dental implants](https://lsdenttek.com.tr/en/dental-implants) · [All-on-4](https://lsdenttek.com.tr/en/all-on-4) · [Zirconia crowns](https://lsdenttek.com.tr/en/zirconia-crowns) · [Smile design](https://lsdenttek.com.tr/en/smile-design) · [International patients](https://lsdenttek.com.tr/en/international-patients) · [FAQ](https://lsdenttek.com.tr/en/faq) · [Contact](https://lsdenttek.com.tr/en/contact)
