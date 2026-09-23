@@ -1,9 +1,9 @@
 RewriteEngine On
 RewriteCond %{HTTP:X-Forwarded-Proto} !https
 RewriteCond %{HTTPS} !on
-RewriteRule ^(.*)$ https://lsdenttek.com.tr/$1 [R=301,L]
-RewriteCond %{HTTP_HOST} ^www\.lsdenttek\.com\.tr$ [NC]
-RewriteRule ^(.*)$ https://lsdenttek.com.tr/$1 [R=301,L]
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
 DirectoryIndex index.html
 DirectorySlash Off
 RewriteRule ^(rehber|[a-z]{2}/guides)/$ /$1 [R=301,L]
