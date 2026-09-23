@@ -1,3 +1,6 @@
+// Giriş yazısının kayarak belirmesi: JS varsa animasyon açılır (JS yoksa metin doğrudan görünür).
+document.documentElement.classList.add('js-anim');
+
 (function () {
   // Menü (mobil)
   var menu = document.getElementById('menu'), burger = document.getElementById('burger');
