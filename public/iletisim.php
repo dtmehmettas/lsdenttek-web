@@ -12,8 +12,10 @@ $ad = $f('ad', 80); $tel = $f('telefon', 24); $eposta = $f('eposta', 120); $ulke
 $konu = $f('konu', 60); $hekim = $f('hekim', 60); $not = $f('not', 800); $lang = $f('lang', 5);
 if ($ad === '' || strlen(preg_replace('/\D/', '', $tel)) < 8) { echo '{"ok":false}'; exit; }
 
-$to = 'info@dtaycan.com.tr'; // TODO domain gelince: info@lsdenttek.com.tr
-$from = 'iletisim@lsdenttek.com.tr';
+// Alıcı ve gönderici: lsdenttek.com.tr yayına girip Cloudflare Email Routing + SPF kurulana kadar
+// dtaycan.com.tr kullanılır (SPF'inde sunucu IP'si var, MX teslimi çalışıyor). Domain gelince ikisi de lsdenttek olacak.
+$to = 'info@dtaycan.com.tr';        // TODO domain gelince: info@lsdenttek.com.tr
+$from = 'iletisim@dtaycan.com.tr';  // TODO domain gelince: iletisim@lsdenttek.com.tr
 $subject = 'LS DentTek iletişim: ' . $ad . ($ulke ? " ($ulke)" : '');
 $body = "lsdenttek.com.tr — iletişim formu (" . strtoupper($lang) . ")\n\n"
       . "Ad Soyad : $ad\n"
@@ -25,7 +27,7 @@ $body = "lsdenttek.com.tr — iletişim formu (" . strtoupper($lang) . ")\n\n"
       . "Not      : $not\n\n"
       . "Tarih    : " . date('d.m.Y H:i') . "\n"
       . "IP       : " . ($_SERVER['HTTP_CF_CONNECTING_IP'] ?? $_SERVER['REMOTE_ADDR'] ?? '') . "\n";
-$sent = ls_smtp_send($to, $subject, $body, $from, 'lsdenttek.com.tr iletişim');
+$sent = ls_smtp_send($to, $subject, $body, $from, 'LS DentTek iletişim');
 
 // yedek: sunucuda log (mail gitmese de kayıt kalsın) — docroot dışı
 @file_put_contents(__DIR__ . '/../iletisim-talepleri.log', date('c') . "\t$ad\t$tel\t$eposta\t$ulke\t$konu\t$hekim\t" . str_replace(["\r", "\n"], ' ', $not) . "\t" . ($sent ? 'mail-ok' : 'mail-fail') . "\n", FILE_APPEND);
