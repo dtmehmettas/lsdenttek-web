@@ -1,8 +1,7 @@
 <?php
 // İletişim formu — e-posta ile bildirim (dtaycan.com.tr ile aynı yöntem: doğrudan MX teslimi, bkz. smtp.php).
-// Alıcı: info@lsdenttek.com.tr → Cloudflare Email Routing → dt.mehmettas@hotmail.com (domain + Cloudflare kurulunca).
-// Kurulum tamamlanana kadar alıcı info@dtaycan.com.tr (zaten hotmail'e yönlendirili). Gönderici SPF'i: lsdenttek.com.tr TXT
-// kaydına ip4:89.19.29.128 (Natro cpls05) eklenmeli; aksi hâlde iletisim@lsdenttek.com.tr göndericisi reddedilebilir.
+// Alıcı: info@lsdenttek.com.tr → Cloudflare Email Routing → dt.mehmettas@hotmail.com (29.09 kuruldu, aktif).
+// Gönderici SPF'i: lsdenttek.com.tr TXT kaydına ip4:89.19.29.128 eklendi (29.09).
 require __DIR__ . '/smtp.php';
 header('Content-Type: application/json; charset=utf-8');
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') { http_response_code(405); echo '{"ok":false}'; exit; }
@@ -12,10 +11,8 @@ $ad = $f('ad', 80); $tel = $f('telefon', 24); $eposta = $f('eposta', 120); $ulke
 $konu = $f('konu', 60); $hekim = $f('hekim', 60); $not = $f('not', 800); $lang = $f('lang', 5);
 if ($ad === '' || strlen(preg_replace('/\D/', '', $tel)) < 8) { echo '{"ok":false}'; exit; }
 
-// Alıcı ve gönderici: lsdenttek.com.tr yayına girip Cloudflare Email Routing + SPF kurulana kadar
-// dtaycan.com.tr kullanılır (SPF'inde sunucu IP'si var, MX teslimi çalışıyor). Domain gelince ikisi de lsdenttek olacak.
-$to = 'info@dtaycan.com.tr';        // TODO domain gelince: info@lsdenttek.com.tr
-$from = 'iletisim@dtaycan.com.tr';  // TODO domain gelince: iletisim@lsdenttek.com.tr
+$to = 'info@lsdenttek.com.tr';
+$from = 'iletisim@lsdenttek.com.tr';
 $subject = 'LS DentTek iletişim: ' . $ad . ($ulke ? " ($ulke)" : '');
 $body = "lsdenttek.com.tr — iletişim formu (" . strtoupper($lang) . ")\n\n"
       . "Ad Soyad : $ad\n"
