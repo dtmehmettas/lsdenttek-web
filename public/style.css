@@ -94,6 +94,7 @@ p{margin:0 0 .8em}
 .hero-full h1 .reveal{display:inline}
 .hero-full .lead{color:#d8eef0;font-size:clamp(14.5px,1.2vw,16px);max-width:44ch}
 .hero-badges{list-style:none;display:flex;flex-wrap:wrap;gap:8px;padding:0;margin:18px 0 0}
+.js-anim .hero-badges.reveal{display:flex}
 .hero-badges li{font-size:12px;font-weight:600;color:#dff7f5;border:1px solid rgba(255,255,255,.28);border-radius:999px;padding:5px 12px;backdrop-filter:blur(4px)}
 .hero-photo{align-self:end;max-width:400px;justify-self:end;width:100%}
 .hero-photo img{border-radius:18px 18px 0 0;aspect-ratio:9/11;object-fit:cover;box-shadow:0 30px 60px rgba(0,0,0,.35)}
