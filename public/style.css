@@ -325,3 +325,34 @@ footer{background:var(--petrol);color:#c9e2e4;margin-top:20px}
   .hero{padding-top:22px}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.card,.wa-float{transition:none}}
+
+/* ---- Sağdan sola diller (ar, fa): yatay yön ayna, yazı tipi, harf aralığı ---- */
+[dir=rtl]{--sans:"Segoe UI",Tahoma,"Noto Naskh Arabic","Noto Sans Arabic",Arial,sans-serif;--head:"Segoe UI",Tahoma,"Noto Naskh Arabic","Noto Sans Arabic",Arial,sans-serif}
+[dir=rtl] body,[dir=rtl] h1,[dir=rtl] h2,[dir=rtl] h3,[dir=rtl] .eyebrow,[dir=rtl] .tag,[dir=rtl] .btn{letter-spacing:0;text-transform:none}
+[dir=rtl] .skip{left:auto;right:-999px}
+[dir=rtl] .menu .btn{margin-left:0;margin-right:6px}
+[dir=rtl] .sub-menu{left:auto;right:0}
+[dir=rtl] .lang{margin-left:0;margin-right:4px}
+[dir=rtl] .lang-menu{right:auto;left:0}
+[dir=rtl] .hero-bg{right:auto;left:0}
+[dir=rtl] .doc-areas li{padding:1px 12px 1px 0}
+[dir=rtl] .doc-areas li::before{left:auto;right:0}
+[dir=rtl] .short{border-left:0;border-right:3px solid var(--turk);border-radius:8px 0 0 8px}
+[dir=rtl] ul.check li{padding:3px 22px 3px 0}
+[dir=rtl] ul.check li::before{left:auto;right:0}
+[dir=rtl] ul.check.hl{padding:10px 12px 10px 14px}
+[dir=rtl] ul.check.hl li{padding-left:0;padding-right:22px}
+[dir=rtl] ul.check.tight li{padding:2px 20px 2px 0}
+[dir=rtl] ol.num{padding-right:0}
+[dir=rtl] ol.num li{padding:4px 32px 4px 0}
+[dir=rtl] ol.num li::before{left:auto;right:0}
+[dir=rtl] .tl{border-left:0;border-right:2px solid var(--line)}
+[dir=rtl] .tl li{padding:4px 14px 6px 0}
+[dir=rtl] .tl li::before{left:auto;right:-6px}
+[dir=rtl] table.reg th,[dir=rtl] table.reg td{text-align:right}
+[dir=rtl] .wa-float{right:auto;left:16px}
+[dir=rtl] .hp{left:auto;right:-9999px}
+@media (min-width:821px){
+  [dir=rtl] .hero-shade{background:linear-gradient(270deg,var(--petrol) 0%,var(--petrol) 40%,rgba(8,44,47,.82) 50%,rgba(8,44,47,.25) 62%,rgba(8,44,47,0) 78%),linear-gradient(180deg,rgba(8,44,47,.25) 0%,rgba(8,44,47,0) 30%,rgba(8,44,47,.45) 100%)}
+}
+@media (max-width:820px){[dir=rtl] .sub-btn{text-align:right}}
