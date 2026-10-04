@@ -356,3 +356,6 @@ footer{background:var(--petrol);color:#c9e2e4;margin-top:20px}
   [dir=rtl] .hero-shade{background:linear-gradient(270deg,var(--petrol) 0%,var(--petrol) 40%,rgba(8,44,47,.82) 50%,rgba(8,44,47,.25) 62%,rgba(8,44,47,0) 78%),linear-gradient(180deg,rgba(8,44,47,.25) 0%,rgba(8,44,47,0) 30%,rgba(8,44,47,.45) 100%)}
 }
 @media (max-width:820px){[dir=rtl] .sub-btn{text-align:right}}
+
+.tphoto{margin:0 0 20px}
+.tphoto img{display:block;width:100%;height:auto;border-radius:14px}
