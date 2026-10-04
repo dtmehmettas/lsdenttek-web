@@ -8,6 +8,8 @@ DirectoryIndex index.html
 DirectorySlash Off
 RewriteRule ^(rehber|[a-z]{2}/guides)/$ /$1 [R=301,L]
 RewriteRule ^(rehber|[a-z]{2}/guides)$ $1/index.html [L]
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+)/$ /$1 [R=301,L]
 RewriteRule ^([a-z]{2})/guides/yurt-disindan-tedavi-takvimi/?$ /$1/guides/treatment-timeline-from-abroad [R=301,L]
 RewriteRule ^([a-z]{2})/guides/implant-sonrasi-ilk-hafta/?$ /$1/guides/first-week-after-implant [R=301,L]
 RewriteRule ^([a-z]{2})/guides/seffaf-plak-mi-tel-mi/?$ /$1/guides/clear-aligners-or-braces [R=301,L]
