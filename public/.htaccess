@@ -8,6 +8,12 @@ DirectoryIndex index.html
 DirectorySlash Off
 RewriteRule ^(rehber|[a-z]{2}/guides)/$ /$1 [R=301,L]
 RewriteRule ^(rehber|[a-z]{2}/guides)$ $1/index.html [L]
+RewriteRule ^([a-z]{2})/guides/yurt-disindan-tedavi-takvimi/?$ /$1/guides/treatment-timeline-from-abroad [R=301,L]
+RewriteRule ^([a-z]{2})/guides/implant-sonrasi-ilk-hafta/?$ /$1/guides/first-week-after-implant [R=301,L]
+RewriteRule ^([a-z]{2})/guides/seffaf-plak-mi-tel-mi/?$ /$1/guides/clear-aligners-or-braces [R=301,L]
+RewriteRule ^([a-z]{2})/guides/cocugun-ilk-dis-randevusu/?$ /$1/guides/childs-first-dental-visit [R=301,L]
+RewriteRule ^([a-z]{2})/guides/kanal-tedavisi-mi-cekim-mi/?$ /$1/guides/root-canal-or-extraction [R=301,L]
+RewriteRule ^([a-z]{2})/guides/zirkonyum-mu-lamina-mi/?$ /$1/guides/zirconia-or-veneers [R=301,L]
 RewriteRule ^(en|de|fr|ru|bg|ar|fa)$ /$1/ [R=301,L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
