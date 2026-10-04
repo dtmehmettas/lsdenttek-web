@@ -15,6 +15,11 @@
 - [Ortodonti](https://lsdenttek.com.tr/ortodonti): Çapraşık, aralıklı ya da kapanış sorunu olan dişlerin sabit tel ya da şeffaf plak tedavisiyle düzenlenmesi; yetişkinlerde de uygulanır. Operatör: Dr. Dt. Nida Yaman Zeren.
 - [Çocuk Diş Hekimliği](https://lsdenttek.com.tr/cocuk-dis-hekimligi): Süt dişlerinin korunması, fissür örtücü ve flor uygulamaları, çürük tedavisi ve ilk ziyaretin korkusuz geçmesi. Operatör: Dr. Dt. Ecem Salmaz Utlu.
 - [Diş Beyazlatma](https://lsdenttek.com.tr/dis-beyazlatma): Diş minesi ve dentinindeki renklenmeleri peroksit içerikli bir jelle açan, dişe kesim yapılmayan estetik uygulama. Operatör: Dt. Aycan Işık Taş.
+- [Lamina (Yaprak Porselen)](https://lsdenttek.com.tr/lamina): Dişin yalnızca ön yüzüne yapıştırılan çok ince porselen kabuk; renk, biçim ve aralık sorunlarında diş dokusunu mümkün olduğunca koruyan estetik seçenek. Operatör: Dt. Aycan Işık Taş.
+- [Kemik Grefti ve Sinüs Lifting](https://lsdenttek.com.tr/kemik-grefti-sinus-lifting): Diş kaybıyla azalan çene kemiğini greftle destekleyen, üst çene arka bölgede sinüs tabanını yükselten cerrahi hazırlık; implantın yerleşeceği zemini oluşturur. Operatör: MSc. Dt. Mehmet Taş.
+- [Gömülü Diş ve 20 Yaş Dişi Cerrahisi](https://lsdenttek.com.tr/gomulu-dis-yirmi-yas-disi): Sürmesi gereken zamanda çene kemiği ya da diş eti içinde kalan dişlerin muayene, görüntüleme ve gerekiyorsa lokal anestezi altında cerrahi çıkarımı; her gömülü diş çekilmez, bir kısmı izlenir. Operatör: MSc. Dt. Mehmet Taş.
+- [Diş Eti Tedavileri](https://lsdenttek.com.tr/dis-eti-tedavileri): Diş eti iltihabını ve dişi tutan kemik ile liflerin kaybını durdurmaya yönelik; profesyonel temizlik, kök yüzeyi düzleme, gerekirse cerrahi ve düzenli bakım seanslarından oluşan tedavi. Operatör: Dt. Aycan Işık Taş.
+- [Acil Diş Ağrısı](https://lsdenttek.com.tr/acil-dis-agrisi): Aniden başlayan diş ağrısı, şişlik, kırık ya da düşen diş gibi durumlarda ilk müdahale, nedenin bulunması ve kaynağa yönelik tedavi. Operatör: MSc. Dt. Mehmet Taş.
 - [Uluslararası hastalar](https://lsdenttek.com.tr/uluslararasi-hastalar): tedavi ayağı (klinik) / seyahat ayağı (Lightstone); süreç adımları
 - [Sık sorulan sorular](https://lsdenttek.com.tr/sss)
 - [Lightstone Group](https://lsdenttek.com.tr/lightstone): seyahat ortağı, geçiş bilgisi
