@@ -30,10 +30,12 @@ document.documentElement.classList.add('js-anim');
   // İletişim formu
   var f = document.getElementById('contactForm');
   if (f) {
+    var t0 = Date.now(); // spam koruması: sunucu çok hızlı gönderimleri (bot) eler
     f.addEventListener('submit', function (e) {
       e.preventDefault();
       var btn = f.querySelector('button[type=submit]'); btn.disabled = true; btn.textContent = btn.getAttribute('data-sending');
-      fetch(f.action, { method: 'POST', body: new FormData(f) })
+      var fd = new FormData(f); fd.append('gecen', Date.now() - t0);
+      fetch(f.action, { method: 'POST', body: fd })
         .then(function (r) { return r.json(); })
         .then(function (j) { if (!j.ok) throw 0; f.reset(); document.getElementById('formOk').hidden = false; document.getElementById('formErr').hidden = true; })
         .catch(function () { document.getElementById('formErr').hidden = false; })
